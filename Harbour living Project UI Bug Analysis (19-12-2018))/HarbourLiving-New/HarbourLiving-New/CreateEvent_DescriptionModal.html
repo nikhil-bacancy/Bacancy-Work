@@ -1,0 +1,509 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+<title>HarbourLiving : CREATE EVENT WIZARD</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/bootstrap-select.css">
+<link rel="stylesheet" href="css/easy-autocomplete.themes.css">
+<link rel="stylesheet" href="css/easy-autocomplete.css">
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/flags.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page-wrapper grey-bg">
+	<!-- header starts here -->
+	<header id="header">
+		<div class="container">
+		 <div class="wrapper">
+		   <div class="row">
+		     <div class="col-xs-12 col-sm-12 col-md-4">
+			    <a class="logo" href="#"><img src="images/logo.png" alt="logo"/></a>
+			 </div>
+		     <div class="col-xs-12 col-sm-5 col-md-4">
+			  <div class="form-wrapper">
+			    <form class="expand-form location hidden-xs">
+				  <input type="text" name="search" placeholder="Enter location">
+				    <span class="icon"></span>
+				  <span class="loc">Nanimo</span>
+				</form>
+			    <form class="expand-form search">
+				  <input type="text" name="search" placeholder="Search events">
+				</form>
+			 </div>
+			 </div>
+		     <div class="col-xs-12 col-sm-7 col-md-4">
+			    <div class="action-btns">
+				 <a href="#">BROWSE EVENTS</a>
+				 <a href="#" class="blue-btn hidden-xs">CREATE EVENT</a>
+				 <a href="#" class="menu-btn"><span class="menu-icon"><i></i><i></i><i></i></span></a>
+				 <div id="menu-panel">
+				    <ul>
+					  <li><a href="#">My Tickets</a> (2)</li>
+					  <li><a href="#">My Favourites</a> (3)</li>
+					  <li class="divider"></li>
+					  <li><a href="#">Manage Events</a> (5)</li>
+					  <li><a href="#">Organizer Profile(s)</a></li>
+					   <li class="divider"></li>
+					   <li><a href="#">Account Settings</a></li>
+					   <li><a href="#">LOGOUT</a></li>
+					</ul>
+					<a href="#" class="blue-btn visible-xs">CREATE EVENT</a>
+				 </div>
+				 </div>
+			 </div>
+		   </div>
+		   </div>
+		</div>
+	</header>
+	<!-- header ends here -->
+	<div class="crate-event-wizard">
+		<div class="container">
+		    <div class="progress-header">
+			   <div class="row">
+			      <div class="col-xs-12 col-sm-6 col-md-6">
+				     <p>African Drumming Workshops... <a href="#">DRAFT</a></p>
+				  </div>
+			      <div class="col-xs-12 col-sm-6 col-md-6 text-right">
+				     <p><a href="#">SAVED</a> Your event details are 0% complete</p>
+				  </div>
+			   </div>
+			</div>
+			<div class="event-navigation">
+			  <ul>
+			    <li class="active"><a href="#"><span class="no">1</span><span class="icon one"></span>EVENT INFO</a></li>
+			    <li><a href="#"><span class="no">2</span><span class="icon two"></span>TICKETS</a></li>
+			    <li><a href="#"><span class="no">3</span><span class="icon three"></span>PUBLISH</a></li>
+			  </ul>
+			</div>
+			<div class="private-links">
+			  <ul>
+			    <li><a href="#"><span class="icon four"></span>Password</a></li>
+			    <li><a href="#"><span class="icon five"></span>View Link</a></li>
+			    <li>
+				<!-- Rounded switch -->
+				<label class="switch">
+				  <input type="checkbox">
+				  <span class="slider round"></span>
+				</label>
+				 <span class="toggle-text off">Private Event OFF</span>
+				 <span class="toggle-text on" style="display:none">Private Event <span>On</span></span>
+				</li>
+			  </ul>
+			</div>
+			<div class="events-info-boxes">
+			   <div class="align-left">
+			       <div class="event-box">
+					 <div class="center-content">
+					  <h4>EVENT TITLE</h4>
+					  <a class="add" href="#"><span class="icon seven"></span></a>
+					 </div>
+					</div>
+					<div class="event-box">
+					 <div class="center-content">
+					  <h4>DATE(S) / TIME(S)</h4>
+					  <a class="add" href="#"><span class="icon seven"></span></a>
+					 </div>
+					</div>
+					<div class="event-box">
+					 <div class="center-content">
+					  <h4>LOCATION</h4>
+					  <a class="add" href="#"><span class="icon seven"></span></a>
+					 </div>
+					</div>
+					<div class="event-box">
+					 <div class="center-content">
+					  <h4>ORGANIZER PROFILE</h4>
+					  <a class="add" href="#"><span class="icon seven"></span></a>
+					 </div>
+					</div>
+			   </div>
+			   <div class="align-right">
+			        <div class="event-box height_adjust_1 upload-image">
+					 <div class="center-content">
+					  <span class="icon six"></span>
+					  <h4>EVENT IMAGE</h4>
+					  <a class="add" href="#"><span class="icon seven"></span></a>
+					  <p>Max file size 10MB</p>
+                      <p>Don’t have an event image? <a href="#">Use one of ours!</a></p>
+					 </div>
+					</div>
+					<div class="event-box height_adjust_2">
+					 <div class="center-content">
+					  <h4>EVENT DESCRIPTION</h4>
+					  <a class="add" href="#" data-toggle="modal" data-target="#discription-modal"><span class="icon seven"></span></a>
+					 </div>
+					</div>
+			   </div>
+			   <div class="clr"></div>
+			   <div class="event-box sponsor">
+				 <div class="center-content">
+				  <h4>SPONSORS</h4>
+				  <a class="add" href="#"><span class="icon seven"></span></a>
+				 </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer starts here -->
+	<footer id="footer">
+	   <div class="container">
+	      <div class="row">
+		     <div class="cl-xs-12 col-sm-6 col-md-6">
+			   <div class="menu-col">
+			     <a href="#" class="logo"><img src="images/footer-logo.png" alt="Logo"/></a>
+				 <ul>
+				   <li><a href="#">BROWSE EVENTS</a></li>
+				   <li><a href="#">CREATE EVENT</a></li>
+				   <li><a href="#">ISLAND NEWS</a></li>
+				   <li><a href="#">SIGN UP</a></li>
+				   <li><a href="#">CONTACT</a></li>
+				 </ul>
+			   </div>
+			 </div>
+		     <div class="cl-xs-12 col-sm-6 col-md-6">
+			   <div class="social-col">
+			     <h3>CONNECT WITH US</h3>
+				 <ul>
+				   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				   <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				   <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				 </ul>
+			   </div>
+			 </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-12">
+			  <p class="disclaimer">©Copyright 2017 HarbourLiving.ca</p>
+			</div>
+		  </div>
+	   </div>
+	</footer>
+	<!-- footer ends here -->
+	
+	<!--Discription Modal -->
+<div id="discription-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+	    <a href="#" class="save-btn saving">Saving...</a>
+        <button type="button" class="close-icon" data-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h4>EVENT DESCRIPTION </h4>
+		<div class="event-discription-info">
+		   <div class="form-group">
+			  <textarea  class="form-control" placeholder="Description text..."></textarea>
+		  </div>
+		  <div class="categories">
+			  <h4>CATEGORIES</h4>
+			  <p>Select up to 2 categories. Choose the closest match to ensure best search results.</p>
+				<ul class="checkboxes">
+					 <li>
+						<div class="checkbox checkbox-primary">
+							<input id="checkbox102" type="checkbox" checked>
+							<label for="checkbox102">
+								Concerts / Music
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox checkbox-primary">
+							<input id="checkbox105" type="checkbox">
+							<label for="checkbox105">
+								Sports / Recreation
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox checkbox-primary">
+							<input id="checkbox108" type="checkbox">
+							<label for="checkbox108">
+								Food / Drink
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox checkbox-primary">
+							<input id="checkbox103" type="checkbox">
+							<label for="checkbox103">
+								Arts / Entertainment
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox checkbox-primary">
+							<input id="checkbox106" type="checkbox">
+							<label for="checkbox106">
+								Business / Networking
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox checkbox-primary">
+							<input id="checkbox109" type="checkbox">
+							<label for="checkbox109">
+								Seniors
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox checkbox-primary">
+							<input id="checkbox104" type="checkbox">
+							<label for="checkbox104">
+								Community
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox checkbox-primary">
+							<input id="checkbox107" type="checkbox">
+							<label for="checkbox107">
+								Festivals / Fairs
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox checkbox-primary">
+							<input id="checkbox110" type="checkbox">
+							<label for="checkbox110">
+								Family
+							</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal ends -->
+</div>
+<div class="overlay-bg"></div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script src="js/jqueryautocomplete.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script src="js/jquery-ui.js"></script>
+ <script>
+ $('.location  .loc').click(function(){
+    $('.location input').focus();
+});
+$('.location  .loc').hover(function(){
+	$(".location .icon").toggleClass("active");
+});
+$('.location  .icon').click(function(){
+    $('.location input').focus();
+});
+ $(window).on('load',function(){
+        $('#discription-modal').modal('show');
+    });
+  $( function() {
+    $( ".datepicker" ).datepicker({
+     showOn: "both",
+	  dateFormat: 'DD,MM,dd,yy',
+     buttonText: "<i class='fa fa-calendar'></i>"
+    });
+  } );
+  </script>
+<script>
+jQuery(".scrollable-droupdown-data").mCustomScrollbar({
+	theme:"dark-3"
+});
+var options = {
+	url: "countries.json",
+
+	getValue: "name",
+
+	list: {
+		match: {
+			enabled: true
+		},
+		maxNumberOfElements: 8
+	}
+	,
+   template: {
+    type: "custom",
+    method: function(value, item) {
+      return "<span class='flag flag-" + (item.code).toLowerCase() + "' ></span>" + value;
+    }
+  }
+};
+
+$("#countries,.countries").easyAutocomplete(options);
+$(document).ready(function() {
+   if ( $(window).width() > 991) { 
+	 jQuery("#filter-nav .scrollable-data-list").mCustomScrollbar({
+	  });
+	} 
+	$(".menu-btn").click(function(){
+		$('#menu-panel').toggle(200);
+		$(".overlay-bg").toggle();
+		$(this).toggleClass('active');
+		return false;
+	});
+	$(".filter-toggle").click(function(){
+		$('#filter-nav').removeClass('active');
+		return false;
+	});
+	$('.switch input[type="checkbox"]').click(function(){
+		if($(this).prop("checked") == true){
+			$('.toggle-text.off').hide();
+			$('.toggle-text.on').show();
+		}
+		else if($(this).prop("checked") == false){
+			$('.toggle-text.off').show();
+			$('.toggle-text.on').hide();
+		}
+	});
+   $('#nav-slideout').click(function(){
+	   $("#filter-nav").addClass('active');
+     return false;	   
+    });
+	  $(".droupdown-list h2").click(function(){
+		$(this).toggleClass('active');
+		$(this).next('.dd-data').toggle(200);
+	});
+   $('#browse-event').click(function(){
+     if ($(window).width() >767) {
+		  $(".overlay-bg").toggle();
+		}
+	else{
+	 $(".overlay-bg").toggleClass('active1');
+	 $("body,html").toggleClass('overflow');
+	 $(".overlay-bg").removeClass('active3 active2');
+	}
+        $("#droup-down").toggleClass('active');
+        $(this).toggleClass('active');
+		$('.navbar-header').removeClass('active');
+		$('.search-icon-wrapper').removeClass('active');
+		if ($(window).width() <=767) {
+		   $('.search-bar').hide();
+        $('.navbar-collapse').hide();
+		}
+		return false;
+    });
+	 $('.navbar-toggle').click(function(){
+	    $(this).parents('.navbar-header').toggleClass('active');
+	    $(".overlay-bg").toggleClass('active2');
+		$(".overlay-bg").removeClass('active1 active3');
+         $("#droup-down").removeClass('active');
+         $("#browse-event").removeClass('active');
+		 $('.search-icon-wrapper').removeClass('active');
+        $('.search-bar').hide();
+        $('.navbar-collapse').toggle();
+		 $("body,html").removeClass('overflow');
+		return false;
+    });
+	 $('.overlay-bg').click(function(){
+	    $(".menu-btn").removeClass('active');
+        $("#droup-down").removeClass('active');
+        $('#browse-event').removeClass('active');
+		$('#menu-panel').hide(200);
+		$('.navbar-header').removeClass('active');
+		$('.search-icon-wrapper').removeClass('active');
+		if ($(window).width() <=767) {
+		   $('.search-bar').hide();
+          $('.navbar-collapse').hide();
+		}
+		if ($(window).width() >767) {
+		  $(this).hide();
+		}
+		else{
+		 $(this).removeClass('active1 active3 active2');
+		 $("body,html").removeClass('overflow');
+		}
+    });
+	if ($(window).width() <=767) {
+		  $('#search .search-icon').click(function(){
+			$(".overlay-bg").toggleClass('active3');
+			$(".overlay-bg").removeClass('active1 active2');
+			$('.search-bar').toggle();
+			$('.navbar-collapse').hide();
+			 $("#droup-down").removeClass('active');
+			$('#browse-event').removeClass('active');
+			$('.navbar-header').removeClass('active');
+			 $('.search-icon-wrapper').toggleClass('active');
+			 $("body,html").toggleClass('overflow');
+			return false;
+		});
+		}
+	$(window).resize(function() {
+		if ($(window).width() <=767) {
+		  $('#search .search-icon').click(function(){
+			$(this).find(".overlay-bg").toggle();
+			$('.search-bar').toggle();
+			$('.navbar-collapse').hide();
+			 $("#droup-down").removeClass('active');
+			$('#browse-event').removeClass('active');
+			$('.navbar-header').removeClass('active');
+			 $('.search-icon-wrapper').toggleClass('active');
+			return false;
+		});
+		}
+	});
+	$(window).scroll(function(){
+		if ($(window).scrollTop() >= 200) {
+		   $('#header').addClass('fixed-header');
+		}
+		else {
+		   $('#header').removeClass('fixed-header');
+		}
+	});
+	$(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+});
+$(function() {
+	var Accordion = function(el, multiple) {
+		this.el = el || {};
+		this.multiple = multiple || false;
+
+		// Variables privadas
+		var links = this.el.find('.menu-link');
+		// Evento
+		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+	}
+
+	Accordion.prototype.dropdown = function(e) {
+		var $el = e.data.el;
+			$this = $(this),
+			$next = $this.next();
+
+		$next.slideToggle();
+		$this.parent().toggleClass('open');
+
+		if (!e.data.multiple) {
+			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+		};
+	}	
+
+	var accordion = new Accordion($('#accordion'), false);
+});
+});
+</script>
+</body>
+</html>

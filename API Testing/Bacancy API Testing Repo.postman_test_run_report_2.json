@@ -1,0 +1,723 @@
+{
+	"id": "a50324f3-c5a7-4a0d-981f-6467101f7724",
+	"name": "Bacancy API Testing Repo",
+	"allTests": [],
+	"timestamp": "2018-12-20T08:36:15.082Z",
+	"collection_id": "25e5e9d3-0a44-430d-962c-1e2cd9243f3b",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "25e5e9d3-0a44-430d-962c-1e2cd9243f3b",
+		"name": "Bacancy API Testing Repo",
+		"description": null,
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [
+			"5118dd13-90bd-4026-9c4d-554b29029bf1",
+			"e2927e95-9551-446a-8dad-4cc67158bdbe",
+			"8c9ca6d9-bd67-4788-b9d4-dc5453624d74",
+			"f9c0b422-87f8-4437-8853-57adaf44d10d",
+			"5b002c7e-0fe2-439d-ab21-3834b126188f",
+			"e5353628-74f9-43c6-a4f7-1de745400244",
+			"c7cfd6ad-2bc4-4dd6-8deb-dbc354773b81",
+			"a1481f49-fa5f-46db-a086-eb2a7348302a",
+			"e67fd6d6-0a49-4045-b705-0ac144363b28"
+		],
+		"folders_order": [],
+		"owner": "6205502",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "Send OTP (POST)",
+			"id": "5118dd13-90bd-4026-9c4d-554b29029bf1",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/saveotp",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"573"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "573",
+			"totalRequestTime": "573",
+			"iterationResults": {}
+		},
+		{
+			"name": "Registration",
+			"id": "e2927e95-9551-446a-8dad-4cc67158bdbe",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/registration",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"364"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "364",
+			"totalRequestTime": "364",
+			"iterationResults": {}
+		},
+		{
+			"name": "Login",
+			"id": "8c9ca6d9-bd67-4788-b9d4-dc5453624d74",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/login",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Response time is less than 500ms",
+				"status": "pass",
+				"Body matches string": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"413"
+			],
+			"allTests": [
+				{
+					"Response time is less than 500ms": true,
+					"Body matches string": true,
+					"Status code is 200": true
+				}
+			],
+			"time": "413",
+			"totalRequestTime": "413",
+			"iterationResults": {}
+		},
+		{
+			"name": "Property List",
+			"id": "f9c0b422-87f8-4437-8853-57adaf44d10d",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/propertylist?start=2&limit=10&sort_by=price_low",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Response time is less than 3000ms",
+				"status": "pass",
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"373"
+			],
+			"allTests": [
+				{
+					"Response time is less than 3000ms": true,
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			],
+			"time": "373",
+			"totalRequestTime": "373",
+			"iterationResults": {}
+		},
+		{
+			"name": "Property Informatio (Single)",
+			"id": "5b002c7e-0fe2-439d-ab21-3834b126188f",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/property",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 357,
+					"expected": 300,
+					"message": "expected 357 to be below 300",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected 357 to be below 300\n    at eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:5:47)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12074:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Response time is less than 300ms",
+				"status": "fail",
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 300ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"357"
+			],
+			"allTests": [
+				{
+					"Response time is less than 300ms": false,
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			],
+			"time": "357",
+			"totalRequestTime": "357",
+			"iterationResults": {}
+		},
+		{
+			"name": "Property Informatio By Slug (Single)",
+			"id": "e5353628-74f9-43c6-a4f7-1de745400244",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/property",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 348,
+					"expected": 300,
+					"message": "expected 348 to be below 300",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected 348 to be below 300\n    at eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:5:47)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12074:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Response time is less than 300ms",
+				"status": "fail",
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 300ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"348"
+			],
+			"allTests": [
+				{
+					"Response time is less than 300ms": false,
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			],
+			"time": "348",
+			"totalRequestTime": "348",
+			"iterationResults": {}
+		},
+		{
+			"name": "Country List",
+			"id": "c7cfd6ad-2bc4-4dd6-8deb-dbc354773b81",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/countries_list",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 592,
+					"expected": 500,
+					"message": "expected 592 to be below 500",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected 592 to be below 500\n    at eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:5:47)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12074:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Response time is less than 500ms",
+				"status": "fail",
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 500ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"592"
+			],
+			"allTests": [
+				{
+					"Response time is less than 500ms": false,
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			],
+			"time": "592",
+			"totalRequestTime": "592",
+			"iterationResults": {}
+		},
+		{
+			"name": "State List By Country",
+			"id": "a1481f49-fa5f-46db-a086-eb2a7348302a",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/state_list_by_country",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Response time is less than 500ms",
+				"status": "pass",
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"364"
+			],
+			"allTests": [
+				{
+					"Response time is less than 500ms": true,
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			],
+			"time": "364",
+			"totalRequestTime": "364",
+			"iterationResults": {}
+		},
+		{
+			"name": "City List By State",
+			"id": "e67fd6d6-0a49-4045-b705-0ac144363b28",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/city_list_by_state",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 565,
+					"expected": 500,
+					"message": "expected 565 to be below 500",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected 565 to be below 500\n    at eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:5:47)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12074:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Response time is less than 500ms",
+				"status": "fail",
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 500ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"565"
+			],
+			"allTests": [
+				{
+					"Response time is less than 500ms": false,
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			],
+			"time": "565",
+			"totalRequestTime": "565",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 19,
+	"totalFail": 4,
+	"totalTime": 3949,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Send OTP (POST)",
+			"id": "5118dd13-90bd-4026-9c4d-554b29029bf1",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/saveotp",
+			"time": "2018-12-20T08:36:15.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Registration",
+			"id": "e2927e95-9551-446a-8dad-4cc67158bdbe",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/registration",
+			"time": "2018-12-20T08:36:15.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Login",
+			"id": "8c9ca6d9-bd67-4788-b9d4-dc5453624d74",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/login",
+			"time": "2018-12-20T08:36:15.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Property List",
+			"id": "f9c0b422-87f8-4437-8853-57adaf44d10d",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/propertylist?start=2&limit=10&sort_by=price_low",
+			"time": "2018-12-20T08:36:15.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response time is less than 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Property Informatio (Single)",
+			"id": "5b002c7e-0fe2-439d-ab21-3834b126188f",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/property",
+			"time": "2018-12-20T08:36:15.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response time is less than 300ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Property Informatio By Slug (Single)",
+			"id": "e5353628-74f9-43c6-a4f7-1de745400244",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/property",
+			"time": "2018-12-20T08:36:15.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response time is less than 300ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Country List",
+			"id": "c7cfd6ad-2bc4-4dd6-8deb-dbc354773b81",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/countries_list",
+			"time": "2018-12-20T08:36:15.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response time is less than 500ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "State List By Country",
+			"id": "a1481f49-fa5f-46db-a086-eb2a7348302a",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/state_list_by_country",
+			"time": "2018-12-20T08:36:15.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "City List By State",
+			"id": "e67fd6d6-0a49-4045-b705-0ac144363b28",
+			"url": "http://www.bacancy.com/btdemo/find-key/api/customer/city_list_by_state",
+			"time": "2018-12-20T08:36:15.082Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Response time is less than 500ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

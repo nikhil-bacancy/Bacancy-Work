@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Google-Calculator</title>
+  <link rel="stylesheet" href="css/style.css">  
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+      <h1>Prepared By NIKHIL PATEL</h1>
+      <hr/>
+    </div>
+    <!-- Starts Google-Calculator Input Section -->
+    <div class="row">
+      <center><h3><span>Google-Calculator</span></h3></center>
+        <div class="input-group">
+          <input type="text" name="display" autofocus="autofocus"  id="display" placeholder="0"/>
+        </div>
+    </div>
+    <div class="row">
+        <hr/>
+        <center>
+          <p id="errMsg"></p>
+        </center>
+    </div>
+    <!-- End Of Google-Calculator Input Section -->
+    
+    <!-- Starts Google-Calculator Keys Section -->
+    <div class="row">
+        <div class="input-group">
+          <div class="col-third">
+            <input type="button" name="btnNum" class="input-group button" value="7" />
+            <input type="button" name="btnNum" class="input-group button" value="4" />
+            <input type="button" name="btnNum" class="input-group button" value="1" />
+            <input type="button" name="btnNum" class="input-group button" value="0" />
+          </div>
+          <div class="col-third">
+            <input type="button" name="btnNum" class="input-group button" value="8" />
+            <input type="button" name="btnNum" class="input-group button" value="5" />
+            <input type="button" name="btnNum" class="input-group button" value="2" />
+            <input type="button" name="btndot" class="input-group button" value="." />
+          </div>
+          <div class="col-third">
+            <input type="button" name="btnNum" class="input-group button" value="9" />
+            <input type="button" name="btnNum" class="input-group button" value="6" />
+            <input type="button" name="btnNum" class="input-group button" value="3" />
+            <input type="button" name="btnqual" id="btnqual" class="input-group button" value="=" />
+          </div>
+          <div class="col-third">
+              <input type="button" name="btnOp" class="input-group button" value="/" />
+              <input type="button" name="btnOp" class="input-group button" value="*" />
+              <input type="button" name="btnOp" class="input-group button" value="-" />
+              <input type="button" name="btnOp" class="input-group button" value="+" />
+          </div>
+          <div class="col-third">
+              <input type="button" name="btnClr" class="input-group button spcial" value="AC" />
+              <input type="button" name="btnOp" class="input-group button spcial" value="^" />
+              <input type="button" name="btnEn" class="input-group button spcial" value="OFF /  ON" />
+              <input type="button" name="btnAns" id="btnAns" class="input-group button spcial" value="ANS" />
+          </div>
+      </div>
+    </div>
+    <!-- End Of  Google-Calculator Keys Section -->
+</div>  
+
+</body>
+<script src="js/main.js"></script>
+</html>

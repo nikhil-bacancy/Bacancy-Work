@@ -1,0 +1,626 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+<title>HarbourLiving : Manage Event Dashboard</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/bootstrap-select.css">
+<link rel="stylesheet" href="css/easy-autocomplete.themes.css">
+<link rel="stylesheet" href="css/easy-autocomplete.css">
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/flags.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page-wrapper grey-bg">
+	<!-- header starts here -->
+	<header id="header">
+		<div class="container">
+		 <div class="wrapper">
+		   <div class="row">
+		     <div class="col-xs-12 col-sm-12 col-md-4">
+			    <a class="logo" href="#"><img src="images/logo.png" alt="logo"/></a>
+			 </div>
+		     <div class="col-xs-12 col-sm-5 col-md-4">
+			  <div class="form-wrapper">
+			    <form class="expand-form location hidden-xs">
+				  <input type="text" name="search" placeholder="Enter location">
+				    <span class="icon"></span>
+				  <span class="loc">Nanimo</span>
+				</form>
+			    <form class="expand-form search">
+				  <input type="text" name="search" placeholder="Search events">
+				</form>
+			 </div>
+			 </div>
+		     <div class="col-xs-12 col-sm-7 col-md-4">
+			    <div class="action-btns">
+				 <a href="#">BROWSE EVENTS</a>
+				 <a href="#" class="blue-btn hidden-xs">CREATE EVENT</a>
+				 <a href="#" class="menu-btn"><span class="menu-icon"><i></i><i></i><i></i></span></a>
+				 <div id="menu-panel">
+				    <ul>
+					  <li><a href="#">My Tickets</a> (2)</li>
+					  <li><a href="#">My Favourites</a> (3)</li>
+					  <li class="divider"></li>
+					  <li><a href="#">Manage Events</a> (5)</li>
+					  <li><a href="#">Organizer Profile(s)</a></li>
+					   <li class="divider"></li>
+					   <li><a href="#">Account Settings</a></li>
+					   <li><a href="#">LOGOUT</a></li>
+					</ul>
+					<a href="#" class="blue-btn visible-xs">CREATE EVENT</a>
+				 </div>
+				 </div>
+			 </div>
+		   </div>
+		   </div>
+		</div>
+	</header>
+	<!-- header ends here -->
+	<div class="event-management">
+		<div class="container pr">
+		  <div class="wrapper">
+		     <a href="#" class="visible-sm visible-xs" id="nav-slideout"><img src="images/manage-icon.png" alt=""/><span class="text">Manage</span></a>
+			   <aside class="sidebar" id="filter-nav">
+			      <a href="#"  class="filter-toggle right visible-sm visible-xs"><img src="images/manage-icon.png" alt=""/><span class="text">Manage</span><span class="icon-close white"></span></a>
+		          <a href="#" class="filter-toggle bottom visible-sm visible-xs"><img src="images/manage-icon.png" alt=""/><span class="text">Manage</span><span class="icon-close white"></span></a>
+				  <a href="#" class="border-btn">BACK TO MY EVENTS</a>
+				  <div class="dd-header first active">
+					<a href="#"><span class="e-m icon-18"></span>EVENT SETUP <span class="dd-arrow"></span></a>
+				  </div>
+				  <div class="dd-data">
+					<ul>
+					  <li><a href="#">Event Details</a></li>
+					  <li><a href="#">Tickets / Registration</a></li>
+					  <li><a href="#">Payment methods</a></li>
+					</ul>
+				  </div>
+				  <div class="dd-header active">
+					<a href="#"><span class="e-m icon-17"></span>MANAGE REGISTRATIONS <span class="dd-arrow"></span></a>
+				  </div>
+				  <div class="dd-data">
+					<ul>
+					  <li><a href="#">View orders</a></li>
+					  <li><a href="#">View attendees</a></li>
+					  <li><a href="#">Email attendees</a></li>
+					  <li><a href="#">Add more attendees</a></li>
+					  <li><a href="#">Setup approval / waitlist</a></li>
+					  <li><a href="#">Manage approval / waitlist</a></li>
+					</ul>
+				  </div>
+				  <div class="dd-header active">
+					<a href="#"><span class="e-m icon-16"></span>PROMOTE EVENT<span class="dd-arrow"></span></a>
+				  </div>
+				  <div class="dd-data">
+					<ul>
+					  <li><a href="#">HarbourLiving Promotions</a></li>
+					  <li><a href="#">Send invitations</a></li>
+					</ul>
+				  </div>
+				  <div class="dd-header active">
+					<a href="#"><span class="e-m icon-15"></span>DISCOUNTS<span class="dd-arrow"></span></a>
+				  </div>
+				  <div class="dd-data">
+					<ul>
+					  <li><a href="#">Promo Codes</a></li>
+					</ul>
+				  </div>
+				  <div class="dd-header active">
+					<a href="#"><span class="e-m icon-14"></span>DAY OF EVENT<span class="dd-arrow"></span></a>
+				  </div>
+				  <div class="dd-data">
+					<ul>
+					  <li><a href="#">Check-in attendees</a></li>
+					  <li><a href="#">Print name badges</a></li>
+					</ul>
+				  </div>
+				  <div class="dd-header active">
+					<a href="#"><span class="e-m icon-13"></span>AFTER THE EVENT DAY<span class="dd-arrow"></span></a>
+				  </div>
+				  <div class="dd-data">
+					<ul>
+					  <li><a href="#">Post-event survey</a></li>
+					</ul>
+				  </div>
+			   </aside>
+			   <div class="content-box">
+			      <header class="event-info">
+				     <div class="row space-bottom">
+						 <div class="col-xs-12 col-sm-8 col-md-8">
+							<h2>Super Saturday at the CR Art Gallery</h2>
+							<h3>SAT, OCT 7, 2017 1:00 PM - 3:00 PM</h3>
+							<a href="#">http://harbourliving.ca/supersaturday-event12345</a>
+						 </div>
+						 <div class="col-xs-12 col-sm-4 col-md-4 text-right">
+							<a href="#" class="blue-btn xs">UNPUBLISH</a>
+							<ul>
+							  <li><a href="#"><span class="e-m icon-8"></span></a></li>
+							  <li><a href="#"><span class="e-m icon-2"></span></a></li>
+							  <li><a href="#"><span class="e-m icon-3"></span></a></li>
+							  <li><a href="#"><span class="e-m icon-4"></span></a></li>
+							</ul>
+						 </div>
+				     </div>
+					 <div class="alert success">
+					    <div class="icon-check"><span class="e-m icon-19"></span></div>
+					    <p>Congratulations, your event is live on <a href="#">Harbourliving.ca</a>!</p>
+					 </div>
+					 <div class="alert notification">
+					    <div class="icon-check"><span class="e-m icon-19"></span></div>
+					    <p>Set up your <a href="#">payment methods</a> to start selling tickets!</p>
+					 </div>
+				   </header>
+				   <div class="record-list">
+				     <ul>
+					    <li>
+						 <div class="block">
+						  <div class="icon-height">
+						    <span class="e-m icon-9"></span>
+						  </div>
+						  <h3>100</h3>
+						  ATTENDEES
+						  </div>
+						</li>
+						 <li>
+						 <div class="block">
+						  <div class="icon-height">
+						    <span class="e-m icon-10"></span>
+						  </div>
+						  <h3>$1,000</h3>
+						  TICKET SALES
+						  </div>
+						</li>
+						<li>
+						 <div class="block">
+						 <div class="icon-height">
+						    <span class="e-m icon-11"></span>
+						  </div>
+						  <h3>465</h3>
+						  VIEWS
+						  </div>
+						</li>
+						<li>
+						 <div class="block">
+						 <div class="icon-height">
+						    <span class="e-m icon-12"></span>
+						  </div>
+						  <h3>30%</h3>
+						  CONVERSION RATE
+						  </div>
+						</li>
+					 </ul>
+				   </div>
+				   <div class="table-data">
+				      <div class="table-header">
+					      <div class="row">
+						     <div class="col-xs-12 col-sm-8 col-md-8">
+							    <h2><span class="e-m icon-17"></span> REGISTRATIONS</h2>
+							 </div>
+						     <div class="col-xs-12 col-sm-4 col-md-4 text-right">
+							    <select class="selectpicker" data-live-search="true" data-width="100px">
+								  <option>June 2018</option>
+								  <option>July 2018</option>
+								  <option>Aug 2018</option>
+								</select>
+							 </div>
+						  </div>
+					  </div>
+					  <table class="table">
+						<thead>
+						  <tr>
+							<th>Ticket #</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Email</th>
+							<th>Ticket</th>
+							<th>Ticket Date</th>
+							<th>Price</th>
+							<th>Date</th>
+							<th>Paid</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td data-th="Ticket #">2000</td>
+							<td data-th="First Name">Elizabeth</td>
+							<td data-th="Last Name">Sandiford</td>
+							<td data-th="Email">elizabeth@gmail</td>
+							<td data-th="Ticket">General Admission</td>
+							<td data-th="Ticket Date">30/06/2018</td>
+							<td data-th="Price">$38</td>
+							<td data-th="Date">22/06/2018</td>
+							<td data-th="Paid"><i class="fa fa-check"></i></td>
+						  </tr> 
+                          <tr>
+							<td data-th="Ticket #">2000</td>
+							<td data-th="First Name">Elizabeth</td>
+							<td data-th="Last Name">Sandiford</td>
+							<td data-th="Email">elizabeth@gmail</td>
+							<td data-th="Ticket">General Admission</td>
+							<td data-th="Ticket Date">30/06/2018</td>
+							<td data-th="Price">$38</td>
+							<td data-th="Date">22/06/2018</td>
+							<td data-th="Paid">&nbsp;</td>
+						  </tr>  						  
+						</tbody>
+					  </table>
+					  <footer class="text-center">
+					  <a href="#" class="view-all border-btn xs">VIEW ALL</a>
+					  </footer>
+				   </div>
+				   <div class="table-data no-space">
+				      <div class="table-header">
+					      <div class="row">
+						     <div class="col-xs-12 col-sm-8 col-md-8">
+							    <h2><span class="e-m icon-6 active"></span> SALES BY TICKET / REGISTRATION TYPE</h2>
+							 </div>
+						     <div class="col-xs-12 col-sm-4 col-md-4 text-right">
+							    <a href="#" class="expand-btn active">Hide<span class="dd"></span></a>
+							 </div>
+						  </div>
+					  </div>
+					  <div class="expand-data">
+					  <table class="table">
+						<thead>
+						  <tr>
+							<th>Ticket &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+							<th>Total $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+							<th># Sold &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+							<th>Comp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+							<th>Refunded &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+							<th>Refunded Total $</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td data-th="Ticket">General Admission</td>
+							<td data-th="Total $">$2,450</td>
+							<td data-th="# Sold">100 of 3000</td>
+							<td data-th="Comp">0</td>
+							<td data-th="Refunded">0</td>
+							<td data-th="Refunded Total $">$0</td>
+						  </tr> 
+                          <tr>
+							<td data-th="Ticket">Seniors</td>
+							<td data-th="Total $">$500</td>
+							<td data-th="# Sold">50 of 3000</td>
+							<td data-th="Comp">2</td>
+							<td data-th="Refunded">1</td>
+							<td data-th="Refunded Total $">$15</td>
+						  </tr>  						  
+						</tbody>
+						 <tfoot>
+							<tr>
+							  <td class="hidden-xs">Totals</td>
+							  <td data-th="Ticket Totals">$2,950</td>
+							  <td data-th="Sold Totals">150</td>
+							  <td data-th="Comp Totals">2</td>
+							  <td data-th="Refunded">1</td>
+							  <td data-th="Refunded Total $">$15</td>
+							</tr>
+						  </tfoot>
+					  </table>
+				   </div>
+				   </div>
+				    <div class="table-data">
+				      <div class="table-header">
+					      <div class="row">
+						     <div class="col-xs-12 col-sm-8 col-md-8">
+							    <h2><span class="e-m icon-20"></span> RECENT REGISTRATIONS</h2>
+							 </div>
+						     <div class="col-xs-12 col-sm-4 col-md-4 text-right">
+							    
+							 </div>
+						  </div>
+					  </div>
+					  <table class="table">
+						<thead>
+						  <tr>
+							<th>Ticket #</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Email</th>
+							<th>Ticket</th>
+							<th>Ticket Date</th>
+							<th>Price</th>
+							<th>Date</th>
+							<th>Paid</th>
+						  </tr>
+						</thead>
+						<tbody>
+						   <tr>
+							<td data-th="Ticket #">2000</td>
+							<td data-th="First Name">Elizabeth</td>
+							<td data-th="Last Name">Sandiford</td>
+							<td data-th="Email">elizabeth@gmail</td>
+							<td data-th="Ticket">General Admission</td>
+							<td data-th="Ticket Date">30/06/2018</td>
+							<td data-th="Price">$38</td>
+							<td data-th="Date">22/06/2018</td>
+							<td data-th="Paid"><i class="fa fa-check"></i></td>
+						  </tr> 
+                          <tr>
+							<td data-th="Ticket #">2000</td>
+							<td data-th="First Name">Elizabeth</td>
+							<td data-th="Last Name">Sandiford</td>
+							<td data-th="Email">elizabeth@gmail</td>
+							<td data-th="Ticket">General Admission</td>
+							<td data-th="Ticket Date">30/06/2018</td>
+							<td data-th="Price">$38</td>
+							<td data-th="Date">22/06/2018</td>
+							<td data-th="Paid">&nbsp;</td>
+						  </tr>  						  
+						</tbody>
+					  </table>
+					  <footer class="text-center">
+					  <a href="#" class="view-all border-btn xs">VIEW ALL</a>
+					  </footer>
+				   </div>
+			   </div>
+		   </div>
+		</div>
+	</div>
+	<!-- footer starts here -->
+	<footer id="footer">
+	   <div class="container">
+	      <div class="row">
+		     <div class="cl-xs-12 col-sm-6 col-md-6">
+			   <div class="menu-col">
+			     <a href="#" class="logo"><img src="images/footer-logo.png" alt="Logo"/></a>
+				 <ul>
+				   <li><a href="#">BROWSE EVENTS</a></li>
+				   <li><a href="#">CREATE EVENT</a></li>
+				   <li><a href="#">ISLAND NEWS</a></li>
+				   <li><a href="#">SIGN UP</a></li>
+				   <li><a href="#">CONTACT</a></li>
+				 </ul>
+			   </div>
+			 </div>
+		     <div class="cl-xs-12 col-sm-6 col-md-6">
+			   <div class="social-col">
+			     <h3>CONNECT WITH US</h3>
+				 <ul>
+				   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				   <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				   <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				 </ul>
+			   </div>
+			 </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-12">
+			  <p class="disclaimer">©Copyright 2017 HarbourLiving.ca</p>
+			</div>
+		  </div>
+	   </div>
+	</footer>
+	<!-- footer ends here -->
+</div>
+<div class="overlay-bg"></div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script src="js/jqueryautocomplete.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script src="js/jquery-ui.js"></script>
+ <script>
+  $('.location  .loc').click(function(){
+    $('.location input').focus();
+});
+$('.location  .loc').hover(function(){
+	$(".location .icon").toggleClass("active");
+});
+$('.location  .icon').click(function(){
+    $('.location input').focus();
+});
+  $( function() {
+    $( ".datepicker" ).datepicker({
+     showOn: "both",
+	  dateFormat: 'DD,MM,dd,yy',
+     buttonText: "<i class='fa fa-calendar'></i>"
+    });
+  } );
+  </script>
+<script>
+jQuery(".scrollable-droupdown-data").mCustomScrollbar({
+	theme:"dark-3"
+});
+var options = {
+	url: "countries.json",
+
+	getValue: "name",
+
+	list: {
+		match: {
+			enabled: true
+		},
+		maxNumberOfElements: 8
+	}
+	,
+   template: {
+    type: "custom",
+    method: function(value, item) {
+      return "<span class='flag flag-" + (item.code).toLowerCase() + "' ></span>" + value;
+    }
+  }
+};
+
+$("#countries,.countries").easyAutocomplete(options);
+$(document).ready(function() {
+   if ( $(window).width() > 991) { 
+	  jQuery("#filter-nav .scrollable-data-list").mCustomScrollbar({
+	  });
+	} 
+	$(".menu-btn").click(function(){
+		$('#menu-panel').toggle(200);
+		$(".overlay-bg").toggle();
+		$(this).toggleClass('active');
+		return false;
+	});
+	$(".sidebar .dd-header").click(function(){
+		$(this).toggleClass('active');
+		$(this).next('.dd-data').toggle(200);
+		return false;
+	});
+	$(".expand-btn").click(function(){
+		$('.expand-data').toggle(200);
+		$(this).toggleClass('active');
+		return false;
+	});
+	$(".filter-toggle").click(function(){
+		$('#filter-nav').removeClass('active');
+		return false;
+	});
+   $('#nav-slideout').click(function(){
+	   $("#filter-nav").addClass('active'); 
+	   return false;
+    });
+	 $('.event-management #nav-slideout').click(function(){
+	   $(this).toggle(); 
+	   $(this).removeClass('visible-sm visible-xs'); 
+    });
+	$(".event-management .filter-toggle").click(function(){
+		$('#nav-slideout').addClass('visible-sm visible-xs'); 
+	});
+	  $(".droupdown-list h2").click(function(){
+		$(this).toggleClass('active');
+		$(this).next('.dd-data').toggle(200);
+	});
+   $('#browse-event').click(function(){
+     if ($(window).width() >767) {
+		  $(".overlay-bg").toggle();
+		}
+	else{
+	 $(".overlay-bg").toggleClass('active1');
+	 $("body,html").toggleClass('overflow');
+	 $(".overlay-bg").removeClass('active3 active2');
+	}
+        $("#droup-down").toggleClass('active');
+        $(this).toggleClass('active');
+		$('.navbar-header').removeClass('active');
+		$('.search-icon-wrapper').removeClass('active');
+		if ($(window).width() <=767) {
+		   $('.search-bar').hide();
+        $('.navbar-collapse').hide();
+		}
+		return false;
+    });
+	 $('.navbar-toggle').click(function(){
+	    $(this).parents('.navbar-header').toggleClass('active');
+	    $(".overlay-bg").toggleClass('active2');
+		$(".overlay-bg").removeClass('active1 active3');
+         $("#droup-down").removeClass('active');
+         $("#browse-event").removeClass('active');
+		 $('.search-icon-wrapper').removeClass('active');
+        $('.search-bar').hide();
+        $('.navbar-collapse').toggle();
+		 $("body,html").removeClass('overflow');
+		return false;
+    });
+	 $('.overlay-bg').click(function(){
+        $("#droup-down").removeClass('active');
+        $('#browse-event').removeClass('active');
+		$(".menu-btn").removeClass('active');
+		$('#menu-panel').hide(200);
+		$('.navbar-header').removeClass('active');
+		$('.search-icon-wrapper').removeClass('active');
+		if ($(window).width() <=767) {
+		   $('.search-bar').hide();
+          $('.navbar-collapse').hide();
+		}
+		if ($(window).width() >767) {
+		  $(this).hide();
+		}
+		else{
+		 $(this).removeClass('active1 active3 active2');
+		 $("body,html").removeClass('overflow');
+		}
+    });
+	if ($(window).width() <=767) {
+		  $('#search .search-icon').click(function(){
+			$(".overlay-bg").toggleClass('active3');
+			$(".overlay-bg").removeClass('active1 active2');
+			$('.search-bar').toggle();
+			$('.navbar-collapse').hide();
+			 $("#droup-down").removeClass('active');
+			$('#browse-event').removeClass('active');
+			$('.navbar-header').removeClass('active');
+			 $('.search-icon-wrapper').toggleClass('active');
+			 $("body,html").toggleClass('overflow');
+			return false;
+		});
+		}
+	$(window).resize(function() {
+		if ($(window).width() <=767) {
+		  $('#search .search-icon').click(function(){
+			$(this).find(".overlay-bg").toggle();
+			$('.search-bar').toggle();
+			$('.navbar-collapse').hide();
+			 $("#droup-down").removeClass('active');
+			$('#browse-event').removeClass('active');
+			$('.navbar-header').removeClass('active');
+			 $('.search-icon-wrapper').toggleClass('active');
+			return false;
+		});
+		}
+	});
+	$(window).scroll(function(){
+		if ($(window).scrollTop() >= 200) {
+		   $('#header').addClass('fixed-header');
+		}
+		else {
+		   $('#header').removeClass('fixed-header');
+		}
+	});
+	$(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+});
+$(function() {
+	var Accordion = function(el, multiple) {
+		this.el = el || {};
+		this.multiple = multiple || false;
+
+		// Variables privadas
+		var links = this.el.find('.menu-link');
+		// Evento
+		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+	}
+
+	Accordion.prototype.dropdown = function(e) {
+		var $el = e.data.el;
+			$this = $(this),
+			$next = $this.next();
+
+		$next.slideToggle();
+		$this.parent().toggleClass('open');
+
+		if (!e.data.multiple) {
+			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+		};
+	}	
+
+	var accordion = new Accordion($('#accordion'), false);
+});
+});
+</script>
+</body>
+</html>
